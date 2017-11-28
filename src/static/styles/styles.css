@@ -1,0 +1,115 @@
+body {
+    text-align: center;
+    margin: 0px;
+    font-family: Dosis, sans-serif;
+    background: -webkit-linear-gradient(#1A082D, #BA5DA1) no-repeat fixed center;
+    background: -moz-linear-gradient(#1A082D, #BA5DA1) no-repeat fixed center;
+    background: -o-linear-gradient(#1A082D, #BA5DA1) no-repeat fixed center;
+    background: linear-gradient(#1A082D, #BA5DA1) no-repeat fixed center;
+    background-size: cover;
+}
+#title {
+    color: white;
+    font-size: 65px;
+    font-style: italic;
+    letter-spacing: 4px;
+    font-family: "Poiret One";
+}
+#chat-app { 
+    width: 80%;
+    margin: 0 auto;
+    min-height: 300px;
+}
+#output {
+    margin: 50px auto;
+    height: 750px;
+    overflow: auto;
+}
+#input {
+    text-align: center;
+    position: fixed;
+    bottom: 15px;
+    width: 70%;
+    left: 0px; 
+    right: 0px;
+    margin: 0 auto;
+}
+#message {
+    height: 50px;
+    width: 70%;
+    font-family: inherit;
+    padding-left: 15px;
+    font-size: 30px;
+    border: none;
+    margin-right: 0px;
+    vertical-align: middle;
+    box-shadow: 0 0 10px #5D5D5D;
+    border-radius: 2px;
+}
+input[type=submit] {
+    height: 60px;
+    width: 100px;
+    border: none;
+    margin-left: 0px;
+    font-family: inherit;
+    font-size: 30px;
+    color: white;
+    background-color: #26829D;
+    vertical-align: middle;
+}
+#handle {
+    height: 50px;
+    width: 250px;
+    border: none;
+    padding-left: 15px;
+    font-family: inherit;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 30px;
+    box-shadow: 0 0 10px #5D5D5D;
+    border-radius: 2px;
+}
+#window {
+    margin-top: 5%;
+}
+form {
+    padding: 5px;
+}
+.messages {
+    padding: 20px;
+    background-color: #6DDE7C;
+    text-align: left;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px grey;
+    margin: 20px auto;
+    font-size: 20px;
+    transform: scale(0.3);
+    animation: popup;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+.hide {
+    animation: fadeout;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.date {
+    float: right;
+    letter-spacing: 1.3px;
+    font-size: 16px;
+    font-style: italic;
+}
+#typing {
+    font-style: italic;
+    color: #A1A1A1;
+    font-size: 18px;
+}
+@keyframes popup {
+    from {transform: scale(0.3)}
+    to {transform: scale(1.0)}
+}
+@keyframes fadeout {
+    from {transform: scale(1.0)}
+    to {transform: scale(0.0)}
+}
